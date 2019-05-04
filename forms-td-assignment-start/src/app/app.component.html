@@ -49,7 +49,7 @@
             name="password"
             ngModel
             required
-            #password>
+            #password="ngModel">
         </div>
         <p *ngIf="!password.valid && password.touched">The password is incorrect!</p>
         <button
