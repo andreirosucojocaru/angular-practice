@@ -1,13 +1,8 @@
-<app-header (buttonClicked)="onButtonClicked($event)"></app-header>
+<app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <div *ngIf="buttonClicked=== 1">
-        <app-recipes></app-recipes>
-      </div>
-      <div *ngIf="buttonClicked=== 2">
-        <app-shopping-list></app-shopping-list>
-      </div>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
