@@ -11,13 +11,6 @@ import { SigninComponent } from './auth/signin/signin.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/recipes', pathMatch: 'full' },
-  { path: 'recipes', component: RecipesComponent, children: [
-      { path: '', component: RecipeStartComponent },
-      { path: 'new', component: RecipeEditComponent, canActivate: [ AuthGuard ] },
-      { path: ':id', component: RecipeDetailComponent },
-      { path: ':id/edit', component: RecipeEditComponent, canActivate: [ AuthGuard ] }
-    ]
-  },
   { path: 'shopping-list', component: ShoppingListComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'signin', component: SigninComponent }

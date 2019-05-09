@@ -10,7 +10,7 @@ import { Response } from '@angular/http';
 export class HeaderComponent {
 
   constructor(private dataStorageService: DataStorageService,
-    private authService: AuthService) { }
+              private authService: AuthService) { }
 
   onSaveData() {
     this.dataStorageService.storeRecipes()
